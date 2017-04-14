@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UEmergency</string>
+    <string name="signup">Signup</string>
+    <string name="ok">OK</string>
+    <string name="home_button_label">U</string>
+    <string name="title_activity_dummy">DummyActivity</string>
+    <string name="sante">Health</string>
+    <string name="pompiers">Firefighters</string>
+    <string name="police">Police</string>
+    <string name="i_am_the_one_concerned">I am the one concerned</string>
+</resources>
