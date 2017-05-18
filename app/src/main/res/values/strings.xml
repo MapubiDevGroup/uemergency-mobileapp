@@ -8,4 +8,19 @@
     <string name="pompiers">Firefighters</string>
     <string name="police">Police</string>
     <string name="i_am_the_one_concerned">I am the one concerned</string>
+    <string name="unknown_error">Oops! an error occurred</string>
+    <string name="empty_fname">Please provide a first name</string>
+    <string name="empty_lname">Please provide a last name</string>
+    <string name="empty_bdate">Please provide a birth date</string>
+    <string name="empty_sex">Please provide a sex</string>
+    <string name="empty_nic">Please provide a national id card number</string>
+    <string name="telephone">Telephone</string>
+    <string name="country">Country</string>
+    <string name="nic_no">NIC No</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="click_to_send_an_alert">Click to send an alert</string>
+    <string name="sex">Sex</string>
+
 </resources>

@@ -33,51 +33,84 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/lname"
 
-        android:hint="Last Name" />
+        android:hint="@string/last_name"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginTop="5dp"
-        android:hint="First Name" />
+        android:id="@+id/fname"
+        android:hint="@string/first_name"
+        android:layout_below="@+id/lname"
+        android:layout_alignStart="@+id/lname" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:hint="Birth Date" />
+        android:id="@+id/bdate"
+        android:hint="@string/birth_date"
+        android:layout_above="@+id/nic_numb"
+        android:layout_alignStart="@+id/fname"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
-        android:layout_marginTop="5dp"
-        android:hint="NIC No" />
+        android:id="@+id/nic_numb"
+        android:layout_alignStart="@+id/bdate"
+        android:hint="@string/nic_no"
+        android:layout_above="@+id/submit_btn"
+        android:layout_alignEnd="@+id/tel" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ok"
-        android:id="@+id/button"
+        android:textColor="@color/white"
+        android:id="@+id/submit_btn"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/editText4"
-        android:layout_alignStart="@+id/editText4" />
+        android:layout_alignEnd="@+id/nic_numb"
+        android:layout_alignStart="@+id/nic_numb"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="getUserInput"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:hint="@string/country"
+        style="@style/Base.V7.Widget.AppCompat.AutoCompleteTextView"
+        android:layout_below="@+id/fname"
+        android:layout_alignEnd="@+id/fname"
+        android:layout_alignStart="@+id/fname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:digits="01234567890+"
+        android:ems="10"
+        android:id="@+id/tel"
+        android:hint="@string/telephone"
+        android:layout_above="@+id/bdate"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/sex"
+        android:id="@+id/sex"
+        android:layout_below="@+id/tel"
+        android:layout_above="@+id/nic_numb"
+        android:layout_alignEnd="@+id/tel"
+        android:layout_toEndOf="@+id/bdate" />
 
 </RelativeLayout>
